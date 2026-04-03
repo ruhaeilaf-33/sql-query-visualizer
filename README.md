@@ -1,5 +1,3 @@
-# sql-query-visualizer
-
 # 💻 SQL Query Visualizer
 
 A full-stack web application that allows users to execute SQL queries and visualize results in both **tabular** and **graphical** formats.
