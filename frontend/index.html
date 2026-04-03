@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQL Query Visualizer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <h1>SQL Query Visualizer</h1>
+
+    <textarea id="query">
+SELECT name FROM sqlite_master WHERE type='table';
+    </textarea>
+
+    <br>
+
+    <button onclick="runQuery()">Run Query</button>
+
+    <h2>Result:</h2>
+    <div id="result"></div>
+
+    <!-- Chart -->
+    <h2>Chart:</h2>
+    <canvas id="chart" width="400" height="200"></canvas>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
