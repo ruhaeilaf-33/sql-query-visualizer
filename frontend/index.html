@@ -3,7 +3,6 @@
 <head>
     <title>SQL Query Visualizer</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Chart.js -->
@@ -12,24 +11,29 @@
 
 <body>
 
-    <h1>SQL Query Visualizer</h1>
+    <div class="container">
+        <h1>💻 SQL Query Visualizer</h1>
 
-    <textarea id="query">
-SELECT name FROM sqlite_master WHERE type='table';
-    </textarea>
+        <textarea id="query" placeholder="Enter your SQL query...">
+SELECT * FROM student;
+        </textarea>
 
-    <br>
+        <br>
 
-    <button onclick="runQuery()">Run Query</button>
+        <button onclick="runQuery()">Run Query</button>
+        <button onclick="downloadCSV()">Download CSV</button>
+        <button onclick="generateSQL()">Generate SQL</button>
 
-    <h2>Result:</h2>
-    <div id="result"></div>
+        <h2>📊 Result Table</h2>
+        <div id="result"></div>
 
-    <!-- Chart -->
-    <h2>Chart:</h2>
-    <canvas id="chart" width="400" height="200"></canvas>
+        <h2>📈 Visualization</h2>
+        <canvas id="chart"></canvas>
 
-    <!-- JS -->
+        <h2>🕘 Query History</h2>
+        <ul id="history"></ul>
+    </div>
+
     <script src="script.js"></script>
 
 </body>
