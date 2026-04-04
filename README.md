@@ -2,6 +2,17 @@
 
 A full-stack web application that allows users to execute SQL queries and visualize results in both **tabular** and **graphical** formats.
 
+## 🌐 Live Demo
+
+- 💻 Frontend (UI): https://ruhaeilaf-33.github.io/sql-query-visualizer/
+- ⚙️ Backend API: https://sql-query-visualizer.onrender.com
+
+### 🧪 How to Use
+1. Open the frontend link
+2. Enter a query or natural language
+3. Click "Generate SQL" or "Run Query"
+4. View results in table + chart
+
 ---
 
 ## 🚀 Features
